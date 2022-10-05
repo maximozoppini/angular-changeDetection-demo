@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let todo of todos$ | async">
+    <span
+      class="todo noselect"
+      [ngClass]="{ completed: todo.completed }"
+      (click)="onToggle(todo)"
+      >{{ todo.owner.firstname }} - {{ todo.description }} - completed:
+      {{ todo.completed }}</span
+    >
+  </li>
+</ul>

@@ -1,0 +1,7 @@
+<span
+  class="todo noselect"
+  [ngClass]="{ completed: todo.completed }"
+  (click)="onToggle()"
+  >{{ todo.owner.firstname }} - {{ todo.description }} - completed:
+  {{ todo.completed }}</span
+>
